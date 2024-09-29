@@ -1,0 +1,15 @@
+{
+  "name": "eleventy-syntaxhighlight-title-copy",
+  "version": "1.0.0",
+  "description": "Example of Syntax highlight with title and copy button",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve"
+  },
+  "author": "Jeff Parker",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0"
+  }
+}

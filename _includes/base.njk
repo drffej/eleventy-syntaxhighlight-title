@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Syntax Highlight demo</title>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" >
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <script>
+    function copyCode(button) {
+
+      const codeText = button.parentElement.parentElement.nextElementSibling.innerText
+    
+      // Copy the text to the clipboard
+      navigator.clipboard.writeText(codeText).then(() => {
+      
+          // Change icon to "check" on success
+          const icon = button.querySelector('i');
+          icon.classList.remove('fa-copy');
+          icon.classList.add('fa-check');
+
+          // Show "Copied!" message
+          const copyText = button.previousElementSibling
+          copyText.classList.add('visible');
+
+          // Remove "Copied!" message after 2 seconds and reset icon
+          setTimeout(() => {
+            copyText.classList.remove('visible');
+            icon.classList.remove('fa-check');
+            icon.classList.add('fa-copy');
+          }, 2000);
+
+        }).catch(err => {
+          console.error('Failed to copy code: ', err);
+        });
+    }
+    </script>
+  </head>
+  <body >
+    <div class="w3-main" style="margin-left:10px">
+      <div class="w3-content w3-container">
+    <h1>{{title}}</h1>
+    {{ content | safe }}
+    </div>
+    </div>
+  </body>
+</html>

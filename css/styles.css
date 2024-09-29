@@ -1,0 +1,55 @@
+.code-block-wrapper {
+    position: relative;
+    background-color: #272822;
+    border-radius: 0.3em;
+  }
+  
+  .code-title {
+    color: white;
+    padding: 5px 10px;
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .copy-btn {
+    top: 8px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+  }
+  .code-header {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #FF6B35;
+  }
+  
+  .copy-btn .fa-copy, .copy-btn .fa-check {
+    font-size: 16px;
+  }
+  
+  .copy-btn:hover {
+    color: #FF6B35; /* Sunset orange */
+  }
+  
+  .copy-text {
+    top: 8px;
+    right: 50px;
+    font-size: 14px;
+    color: white;
+    visibility: hidden; /* Hidden initially */
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+  
+  .copy-text.visible {
+    visibility: visible;
+    opacity: 1;
+  }
