@@ -5,7 +5,7 @@
   "main": "eleventy.config.js",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy"ZZ
+    "build": "npx @11ty/eleventy"
   },
   "author": "Jeff Parker",
   "license": "ISC",
