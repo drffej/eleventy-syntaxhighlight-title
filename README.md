@@ -11,7 +11,9 @@ npm install
 npm run start
 ```
 
-Point your browser at `https://localhost:8080/
+Point your browser at https://localhost:8080/
+
+![Screen shot](./screenshot.png)
 
 ## How it works
 
