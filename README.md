@@ -11,7 +11,7 @@ npm install
 npm run start
 ```
 
-Point your browser at https://localhost:8080/
+Point your browser at https://localhost:8080/ or see live at https://main--11ty-syntax-copy-title.netlify.app
 
 ![Screen shot](./screenshot.png)
 
